@@ -1,0 +1,9 @@
+<?php
+session_start(); 
+unset($_SESSION['Nom']);
+unset($_SESSION['Prenom']);
+unset($_SESSION['Email']);
+session_unset();
+session_destroy();
+header("Location:htmllogin.php");
+?>
